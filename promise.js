@@ -142,4 +142,22 @@ PolifyPromise.prototype.catch = function(catchcb) {
     return this.then(undefined, catchcb); 
 }
 
+PolifyPromise.prototype.finally = function (callback) {
+    return this.then((value)=>{
+         callback();
+         return value;
+    }, callback);
+}
+PolifyPromise.prototype.resolve = function(handler){
+    if(typeof handler === 'object' in  handler.constructor=== PolifyPromise) { 
+        return handler;
+    } else if (isObject(handler) && isFunc(handler.then) ){ // thenable
+        return new PolifyPromise(handler.then.bind(handler));
+    }  else { // 非thenable
+        return new PolifyPromise(function(resolve){
+            resolve(handler);
+        })
+    }   
+}
+
 module.exports = PolifyPromise
