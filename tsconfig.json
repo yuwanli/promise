@@ -1,0 +1,10 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "outDir": "./",
+    },
+    "files": [
+        "promise.js",
+        "index.js",
+    ]
+}

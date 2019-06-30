@@ -1,0 +1,29 @@
+{
+  "name": "promise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server",
+    "build": "./node_modules/.bin/webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuwanli/promise.git"
+  },
+  "author": "wanli.yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuwanli/promise/issues"
+  },
+  "homepage": "https://github.com/yuwanli/promise#readme",
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "typescript": "^3.5.2"
+  }
+}
