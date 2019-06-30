@@ -1,12 +1,12 @@
 const PolifyPromise = require('./promise.js')
 
-var p2 = new Promise(function(resolve,reject){
+var p2 = new PolifyPromise(function(resolve,reject){
     setTimeout(() => {
         resolve('p2')
     },1000)
 });
 
-var p1 = new Promise(function(resolve,reject){
+var p1 = new PolifyPromise(function(resolve,reject){
     resolve(p2)
 });
 
