@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/yuwanli/promise#readme",
   "devDependencies": {
-    "ts-loader": "^6.0.4",
-    "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.5"
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "typescript": "^3.5.2"
